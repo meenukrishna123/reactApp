@@ -17,7 +17,7 @@ import {
 //import Link from "./components/Link";
 //import axios from "axios";
 
-var Modal = require("react-bootstrap-modal");
+//var Modal = require("react-bootstrap-modal");
 var achpaymentMethodId;
 
 toast.configure();
@@ -295,7 +295,6 @@ class App extends Component {
     console.log("Invooked Method" + event.target.getAttribute("data-id"));
     // console.log("Invooked expMonth" + event.target.getAttribute("data-expmonth"));
     this.initExpMonth = event.target.getAttribute("data-expmonth");
-    //window.paymentMethodId = event.target.getAttribute("data-id");
     this.billStreet = event.target.getAttribute("data-billStreet");
     this.billCity = event.target.getAttribute("data-billCity");
     this.billCountry = event.target.getAttribute("data-billCountry");
