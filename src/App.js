@@ -30,7 +30,7 @@ class App extends Component {
     //-------- Medviation Dev  ------//
     this.baseUrl="https://crmapay-developer-edition.na213.force.com/";
     this.urlPaymentLinkId = queryParams.get("Id");
-    this.baseUrl = queryParams.get("baseUrl");
+    //this.baseUrl = queryParams.get("baseUrl");
     const current = new Date();
     this.todaysDate = `${current.getFullYear()}-${
       current.getMonth() + 1
