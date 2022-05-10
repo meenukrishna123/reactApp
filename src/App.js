@@ -31,7 +31,6 @@ class App extends Component {
     this.baseUrl="https://crmapay-developer-edition.na213.force.com/";
     this.urlPaymentLinkId = queryParams.get("Id");
     this.baseUrl = queryParams.get("baseUrl");
-    //console.log("patientName    ------>"+inputJsonValue.orderdetails[0].crma_pay__Patient_Name__c);
     const current = new Date();
     this.todaysDate = `${current.getFullYear()}-${
       current.getMonth() + 1
