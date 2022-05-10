@@ -5,8 +5,8 @@ import "./App.css";
 import { render } from "@testing-library/react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Dropdown from "react-dropdown";
-import useDropdownMenu from "react-accessible-dropdown-menu-hook";
+//import Dropdown from "react-dropdown";
+//import useDropdownMenu from "react-accessible-dropdown-menu-hook";
 import React, { Component, PropTypes, useState } from "react";
 import {
   IoMdAddCircle,
