@@ -20,7 +20,7 @@ import {
 //var Modal = require("react-bootstrap-modal");
 var achpaymentMethodId;
 
-toast.configure();
+//toast.configure();
 class App extends Component {
   constructor(props) {
     super(props);
