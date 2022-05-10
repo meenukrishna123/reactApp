@@ -62,9 +62,7 @@ class App extends Component {
     this.closeDeleteModal = this.closeDeleteModal.bind(this);
     //this.deletePaymentMethod = this.deletePaymentMethod.bind(this);
     this.notification = this.notification.bind(this);
-    //this.getContactDetails = this.getContactDetails.bind(this);
     this.updatePaymentMethod = this.updatePaymentMethod.bind(this);
-    //this.handledDefaultChechBox = this.handledDefaultChechBox.bind(this);
     this.defaultCardPayment = this.defaultCardPayment.bind(this);
     this.state = { isDelete: false };
     this.state = { isEdit: false };
