@@ -28,7 +28,9 @@ class App extends Component {
     //-------- InterACTPay Dev  ------//
     //this.baseUrl="https://crma-pay-developer-edition.na163.force.com/"
     //-------- Medviation Dev  ------//
-    this.baseUrl="https://crmapay-developer-edition.na213.force.com/";
+    //this.baseUrl="https://crmapay-developer-edition.na213.force.com/";
+    //------------Medviation Dev Sandbox ----------//
+    this.baseUrl = "https://developer-crmapay.cs214.force.com/"
     this.urlPaymentLinkId = queryParams.get("Id");
     //this.baseUrl = queryParams.get("baseUrl");
     const current = new Date();
