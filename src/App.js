@@ -156,11 +156,11 @@ class App extends Component {
         //  this.setState({TransactionTotal: this.initialOrderAmount });
         //  this.setState({ dueAmount: amountDue }); 
           var linkActive = apiResponse.crma_pay__Active__c;
-          // if(linkActive==false){
-          //   console.log("inside if -->"+linkActive);
-          //   this.setState({ expiredLink: true });
-          // this.updatePaymentLinkRecord();
-          // }
+          if(linkActive==false){
+            console.log("inside if -->"+linkActive);
+            this.setState({ expiredLink: true });
+          this.updatePaymentLinkRecord();
+          }
         var apiUrl = apiResponse.crma_pay__PaymentURL__c;
         this.url = new URL(apiUrl);
         this.urlOrderId = this.url.searchParams.get("orderId");
@@ -197,8 +197,8 @@ class App extends Component {
           }
         }
         else{
-          // this.setState({ expiredLink: true });
-          // this.updatePaymentLinkRecord();
+          this.setState({ expiredLink: true });
+          this.updatePaymentLinkRecord();
         }
         //console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^"+this.valid);
          //**************************************************************//
@@ -1178,7 +1178,7 @@ class App extends Component {
         this.transIdUrl = response;
         var redirectUrl = 'https://medviation-developer-edition.na213.force.com/s/invoice-page'+'?transId=' + this.transIdUrl;
           console.log("invoked redirecturl"+redirectUrl);
-          //this.updatePaymentLinkRecord();
+          this.updatePaymentLinkRecord();
         }
         console.log(" create  transaction-->" + JSON.stringify(response));
           this.navigateTo(redirectUrl);
@@ -2165,9 +2165,9 @@ class App extends Component {
                       <div class="col">
                     <p>Other Amount</p>
                   </div>
-                  <div class="col">
+                  <div class="col-lg-2 col-md-2 col-sm-1">
                   <div class="form-group row">
-                  <label >$</label><div class="col">
+                  <label >$</label><div class="col-lg col-sm-1">
                     <input type="phone" class="form-control otherAmountClss" id="" name="amount" autocomplete="off" onChange={this.handleTransAmount} />
                     </div>
                   </div>
