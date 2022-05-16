@@ -46,10 +46,8 @@ class App extends Component {
     this.createStripeTransaction = this.createStripeTransaction.bind(this);
     this.notification = this.notification.bind(this);
     this.navigateTo = this.navigateTo.bind(this);
-    //this.createTransactionRecord = this.createTransactionRecord.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.handleCardInput = this.handleCardInput.bind(this);
-    //this.createPaymentMethod = this.createPaymentMethod.bind(this);
     this.opendropdown = this.opendropdown.bind(this);
     this.selectedAchPaymentMethod = this.selectedAchPaymentMethod.bind(this);
     this.handleChechBox = this.handleChechBox.bind(this);
@@ -57,12 +55,9 @@ class App extends Component {
     this.updateContact = this.updateContact.bind(this);
     this.refreshPage = this.refreshPage.bind(this);
     this.getContactDetails = this.getContactDetails.bind(this);
-    //this.onloadeddata = this.onloadeddata.bind(this);
     this.onloadAchFetch = this.onloadAchFetch.bind(this);
     this.handleIsDelete = this.handleIsDelete.bind(this);
-    //this.selectedPaymentMethod = this.selectedPaymentMethod.bind(this);
     this.closeDeleteModal = this.closeDeleteModal.bind(this);
-    //this.deletePaymentMethod = this.deletePaymentMethod.bind(this);
     this.notification = this.notification.bind(this);
     this.updatePaymentMethod = this.updatePaymentMethod.bind(this);
     this.defaultCardPayment = this.defaultCardPayment.bind(this);
@@ -1176,8 +1171,8 @@ class App extends Component {
       .then((response) => {
         if(response){
         this.transIdUrl = response;
-        var redirectUrl = 'https://medviation-developer-edition.na213.force.com/s/invoice-page'+'?transId=' + this.transIdUrl;
-          console.log("invoked redirecturl"+redirectUrl);
+        var redirectUrl = 'https://developer-medviation.cs214.force.com/xchng/s/invoice-page'+'?transId=' + this.transIdUrl; 
+        console.log("invoked redirecturl"+redirectUrl);
           this.updatePaymentLinkRecord();
         }
         console.log(" create  transaction-->" + JSON.stringify(response));
